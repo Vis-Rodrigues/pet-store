@@ -24,6 +24,10 @@ public class DtoTag {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public DtoTag criarTag() {
+		return new DtoTag(1, "tag1");
+	}
 	
 	
 }

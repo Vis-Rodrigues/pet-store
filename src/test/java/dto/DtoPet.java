@@ -34,6 +34,11 @@ public class DtoPet {
 		photoUrls.add("http://www.teste.com");
 		pet.setPhotoUrls(photoUrls);	
 		
+		List<DtoTag> tags = new ArrayList<DtoTag>();
+		tags.add(new DtoTag().criarTag());
+		pet.setPhotoUrls(photoUrls);
+		pet.setTags(tags);
+		
 		return pet;
 				
 	}
