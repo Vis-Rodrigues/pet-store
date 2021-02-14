@@ -20,7 +20,7 @@ public class TestOrder extends core.Base {
 	
 	@Test
 	public void ConsultaOrder() {
-		System.out.println("Exercicio A - 4");
+		System.out.println("Exercicio A - 5");
 		
 		String endpoint = "/store/order/".concat(String.valueOf(1));
 		ValidatableResponse validatableResponse = realizarGet(endpoint);

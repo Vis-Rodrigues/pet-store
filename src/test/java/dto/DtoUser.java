@@ -3,22 +3,44 @@ package dto;
 public class DtoUser {
 	
 	
-	public int id;
+	private int id;
 	
-	public String username;
+	private String username;
 	
-	public String firstName;
+	private String firstName;
 	
-	public String lastName;
+	private String lastName;
 	
-	public String email;
+	private String email;
 	
-	public String password;
+	private String password;
 	
-	public String phone;
+	private String phone;
 	
-	public int userStatus;
+	private int userStatus;
 
+	public DtoUser criarUser(String firstName, String lastName) {
+		DtoUser userDto = new DtoUser();
+		userDto.setId(1);
+		
+		userDto.setUsername(firstName.concat(lastName));
+		userDto.setFirstName(firstName);
+		userDto.setLastName(lastName);
+		
+		userDto.setEmail(firstName.toLowerCase()
+				.concat(".")
+				.concat(lastName.toLowerCase())
+				.concat("@teste.com"));
+		
+		userDto.setPassword("123456");
+		
+		userDto.setPhone("11999999999");
+		
+		userDto.setUserStatus(1);
+		
+		return userDto;
+	}
+	
 	public int getId() {
 		return id;
 	}
